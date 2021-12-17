@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Require Logger
+# key: reql
+# --
+require Logger

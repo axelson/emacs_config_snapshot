@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Key Get
+# key: kget
+# --
+$1 = Keyword.get(opts, :$1)

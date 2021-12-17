@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ps
+# key: ps
+# --
+puts "$1: #{$1.inspect}"
