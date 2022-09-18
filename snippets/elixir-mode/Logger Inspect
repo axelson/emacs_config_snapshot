@@ -2,4 +2,4 @@
 # name: Logger Inspect
 # key: logi
 # --
-Logger.info("$2$1: #{inspect($1)}")
+Logger.info("$2$1: #{inspect($1, pretty: true)}")

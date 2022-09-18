@@ -54,18 +54,22 @@
 (package! ace-window)
 (package! link-hint)
 (package! prettier)
+(package! jest)
+(package! lsp-treemacs)
+(package! beacon)
 
-;;(unpin! elixir-mode)
-;; (package! elixir-mode :recipe (:repo "axelson/emacs-elixir" :branch "no-smie") :pin "a31f308c4c99837710bd11d1ddd612d48f74b4f2")
+(package! elixir-mode
+  :recipe (:local-repo "~/dev/forks/emacs-elixir"
+           :build (:not compile)))
+
 ;;(package! elixir-mode :recipe (:repo "axelson/emacs-elixir") :pin "a31f308c4c99837710bd11d1ddd612d48f74b4f2")
-;(package! elixir-mode :recipe (:repo "axelson/smartparens" :branch "elixir-better-search"))
 
 ;; Using lsp code folding for elixir: https://blog.evalcode.com/enable-elixir-code-folding-in-doom-emacs/
 (package! lsp-origami)
 ;(package! smartparens :recipe (:repo "axelson/smartparens" :branch "elixir-better-search"))
-(package! tree-sitter)
-;; (package! tree-sitter-langs)
-(package! tree-sitter-langs :recipe (:repo "wingyplus/tree-sitter-langs" :branch "elixir-queries"))
+;;(package! tree-sitter)
+;; Wait for https://github.com/emacs-tree-sitter/tree-sitter-langs/pull/57 to be merged
+;;(package! tree-sitter-langs :recipe (:repo "wingyplus/tree-sitter-langs" :branch "elixir-queries"))
 
 (package! coffee-mode)
 ;;(package! elixir-smie :disable t)
@@ -75,3 +79,4 @@
 (package! marginalia)
 ;; Inflect strings (i.e. change CamelCase to snake_case)
 (package! string-inflection)
+(package! alchemist :disable t)
